@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Search songs using artist names</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta http-equiv="x-ua-compatible" content="ie=edge">
+                    <!-- Font Awesome -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.min.css')}}">
+                            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'mdb.min.css')}}">
+    
+    <body>
+        
+        <!-- Start your project here-->
+        <div style="height: 10vh">
+            <div class="flex-center flex-column">
+                <h4 class="animated fadeIn mb-3">Browse songs by Artist and Band Names</h4>
+            </div>
+        </div>
+        <table class="flex-center flex-column">
+                       <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Aerosmith" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Aerosmith</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Angela Dimitriou" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Angela Dimitriou</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Atman" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Atman</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Bad Company" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Bad Company</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Bad Religion" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Bad Religion</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Cali" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Cali</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Daniel Johnston" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Daniel Johnston</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Der Plan" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Der Plan</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="DJ Nasty" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> DJ Nasty</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="DJ X-Change" /><button class="btn blue-grey btn-rounded ml-3" type="submit">DJ X-Change</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Eko Fresh" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Eko Fresh</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Faith Hill" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Faith Hill</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Faithless" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Faithless</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Gary Moore" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Gary Moore</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Hatebreed" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Hatebreed</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Heaven 17" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Heaven 17</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Helen Love" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Helen Love</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Herbert  von Karajan" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Herbert  von Karajan</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Isabel Pantoja" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Isabel Pantoja</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Jack Johnson" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Jack Johnson</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Jackie Wilson" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Jackie Wilson</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Jacques Douai" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Jacques Douai</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Jacques Dutronc" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Jacques Dutronc</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Kraftwerk" /><button class="btn blue-grey btn-rounded ml-3" type="submit"> Kraftwerk</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Malkit Singh" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Malkit Singh</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Michael Stanley Band" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Michael Stanley Band</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Nestor Torres" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Nestor Torres</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Nick Cave & The Bad Seeds" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Nick Cave & The Bad Seeds</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Orbital" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Orbital</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="R. Carlos Nakai" /><button class="btn blue-grey btn-rounded ml-3" type="submit">R. Carlos Nakai</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Taylor Swift" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Taylor Swift</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Thomas Dolby" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Thomas Dolby</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Usher" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Usher</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Van Halen" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Van Halen</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="Washboard Sam" /><button class="btn blue-grey btn-rounded ml-3" type="submit">Washboard Sam</button></form></td></tr>
+            <tr><td>            <form action="/result" method="POST"><input type="hidden" name="query" value="White Heart" /><button class="btn blue-grey btn-rounded ml-3" type="submit">White Heart</button></form></td></tr>
+        </table>
+        <!-- /Start your project here-->
+        
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+    </body>
+    
+</html>
+

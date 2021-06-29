@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Browse Songs by Categories</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta http-equiv="x-ua-compatible" content="ie=edge">
+                    <!-- Font Awesome -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.min.css')}}">
+                            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'mdb.min.css')}}">
+                                
+                                <body>
+                                    
+                                    <!-- Start your project here-->
+                                    
+                                    <div style="height: 15vh">
+                                        <div class="flex-center flex-column">
+                                            <h4 class="animated fadeIn mb-3">Search for quotes using Categories</h4>
+                                        </div>
+                                    </div>
+                                    <table>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="bass music" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">bass music</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="blues-rock" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">blues-rock</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="cantonese pop" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">cantonese pop</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="ccm" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">ccm</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="chanson" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">chanson</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="chicago blues" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">chicago blues</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="chinese music" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">chinese music</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="country" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">country</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="dance pop" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">dance pop</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="dancehall" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">dancehall</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="dubstep" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">dubstep</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="folk rock" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">folk rock</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="gangster rap" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">gangster rap</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="ghetto tech" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">ghetto tech</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="hard house" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">hard house</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="hardcore punk" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">hardcore punk</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="heavy metal" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">heavy metal</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="hip hop" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">hip hop</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="jazz" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">jazz</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="latin jazz" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">latin jazz</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="opera" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">opera</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="pop" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">pop</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="pop rap" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">pop rap</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="pop rock" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">pop rock</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="power pop" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">power pop</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="progressive house" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">progressive house</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="qawwali" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">qawwali</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="rock" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">rock</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="roots reggae" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">roots reggae</button>
+                                        </form>
+                                        <form action="/result" method="POST">
+                                            <input type="hidden" name="query" value="western swing" />
+                                            <button class="btn btn-dark-green btn-rounded ml-3" type="submit">western swing</button>
+                                        </form>
+                                    </table>
+                                    <!-- /Start your project here-->
+                                    
+                                    <!-- SCRIPTS -->
+                                    <!-- JQuery -->
+                                    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                                    <!-- Bootstrap tooltips -->
+                                    <script type="text/javascript" src="js/popper.min.js"></script>
+                                    <!-- Bootstrap core JavaScript -->
+                                    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+                                    <!-- MDB core JavaScript -->
+                                    <script type="text/javascript" src="js/mdb.min.js"></script>
+                                </body>
+                                
+</html>
+

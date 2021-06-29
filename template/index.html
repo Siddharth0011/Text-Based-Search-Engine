@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Songs Search Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+<!--    <script src="https://use.fontawesome.com/f38f386dd2.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'mdb.min.css')}}">
+    <style>
+        #search{
+            background-color: cyan;
+            text-decoration-color: black;
+        }
+        
+    </style>
+
+  </head>
+
+  <body>
+      <div style="height: 35vh">
+          <div class="flex-center flex-column">
+              <h1 class="animated fadeIn mb-4 display-4" style="font-size: 80px">Songs Search Engine</h1>
+              <h4 class="animated fadeIn mb-3">Search for songs using Artist and Band Names or Song Genres</h4>
+          </div>
+      </div>
+      <form class="form-inline flex-center" style="height: 10vh" action="/result" method="POST">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input name ="query" class="form-control form-control-lg ml-3 w-50 wiki-search-input" type="text" placeholder="Search Here...">
+              <button class="btn btn-elegant btn-rounded btn-lg ml-3"  type="submit" style="background-color: yellow">Search</button>
+      </form>
+      <div style="height: 16vh">
+          <div class="flex-center flex-column">
+              <h5 class="animated fadeIn mb-3">Discover songs by <a href={{ url_for('authors')}}>Artist or Band Names</a> or <a href={{ url_for('categories')}}>Song Genres</a></h5>
+          </div>
+      </div>
+      <br>
+      <div style="height: 10vh">
+          <div class="flex-center flex-column">
+              <h5 class="animated fadeIn mb-3">Designed and developed by Siddharth Raj, Rahul Prakash and Ketan Goyal</h5>
+              <p class="animated fadeIn text-muted">Hope you liked it!!!</p>
+          </div>
+      </div>
+      <br>
+      <script rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'jquery.min.js')}}"></script>
+      <script rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='bootstrap.min.js')}}"></script>
+</body>
+
+</html>
